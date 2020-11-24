@@ -8,16 +8,16 @@ function updateClock() {
   var period = "AM";
 
   if (hours >= 12) {
-    period = "PM"
+    period = "PM";
   }
   if (hours > 12) {
-    hours -= 12
+    hours -= 12;
   }
   if (seconds < 10) {
-    seconds += "0"
+    seconds += "0";
   }
   if (minutes < 10) {
-    minutes += "0"
+    minutes += "0";
   }
 
   var clockTime = hours + ":" + minutes + ":" + seconds + " " + period;
